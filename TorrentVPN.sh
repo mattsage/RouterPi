@@ -13,3 +13,4 @@ echo $NewIP
 echo "****************************************"
 gpio mode 14 out
 gpio write 14 1
+sudo python /home/pi/Shutdown.py
