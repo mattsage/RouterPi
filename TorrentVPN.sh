@@ -14,3 +14,4 @@ echo "****************************************"
 /usr/bin/Pushbullet.sh "Old IP: $OldIP New IP: $NewIP"
 gpio mode 14 out
 gpio write 14 1
+sudo python /home/pi/RouterPi/Shutdown.py
