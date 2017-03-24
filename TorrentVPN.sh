@@ -24,7 +24,6 @@ then
     sleep 1
     $blink = $(( $blink+1 ))
   done
-  break
 else
 	/usr/bin/Pushbullet.sh "Old IP: $OldIP New IP: $NewIP"
 	gpio mode 14 out
