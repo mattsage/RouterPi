@@ -2,9 +2,11 @@
 Transmission, VPN and Pi-Hole
 
 Sofware to install:
-Transmission
-OpenVPN
-Pi-Hole
+git clone https://github.com/mattsage/RouterPi.git
+git clone https://github.com/mattsage/Shutdown-Button.git
+Transmission - sudo apt-get install transmiassion
+OpenVPN - 
+Pi-Hole - curl -sSL https://install.pi-hole.net | bash
 
 Scripts Description
 StartVPN.py	- Script is run at boot. Waits for button on GPIO #17 to be pressed. Once Pressed TorrentVPN.sh is executed
