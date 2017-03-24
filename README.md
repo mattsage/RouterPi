@@ -3,6 +3,7 @@ Transmission, VPN and Pi-Hole
 
 Sofware to install:
 git clone https://github.com/mattsage/RouterPi.git
+create /home/pi/Pushbulletkey.config
 git clone https://github.com/mattsage/Shutdown-Button.git
 Transmission - sudo apt-get install transmiassion
 OpenVPN - 
