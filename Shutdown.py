@@ -6,6 +6,6 @@ GPIO.setup(17, GPIO.IN,pull_up_down=GPIO.PUD_UP) #setup GPIO pin #17 as Pull up 
 while True:
     print GPIO.input(17)
     if(GPIO.input(17) == False):
-        os.system("\""sudo shutdown -h now"\"") #If button pressed shutdown pi
+        os.system("sudo shutdown -h now") #If button pressed shutdown pi
         break
-    time.sleep(1)
+time.sleep(1)

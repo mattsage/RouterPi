@@ -8,6 +8,6 @@ while True:
     print GPIO.input(17)
     if(GPIO.input(17) == False):
         GPIO.output(27,GPIO.HIGH)
-	os.system("/home/pi/TorrentVPN.sh") #If button pressed shutdown pi
+	os.system("/home/pi/RouterPi/TorrentVPN.sh") #If button pressed shutdown pi
         break
     time.sleep(1)
