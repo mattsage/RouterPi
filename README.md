@@ -1,5 +1,5 @@
 # RouterPi
-Transmission, VPN and Pi-Hole
+Speed Test, Transmission, VPN and Pi-Hole
 
 Sofware to install:
 git clone https://github.com/mattsage/RouterPi.git
