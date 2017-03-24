@@ -4,7 +4,7 @@ echo $OldIP
 echo "****************************************"
 cd /etc/openvpn/
 sudo service transmission-daemon reload 
-sudo openvpn --config /etc/openvpn/UK\ Southampton.ovpn --auth-user-pass /etc/openvpn/login.txt &
+#sudo openvpn --config /etc/openvpn/UK\ Southampton.ovpn --auth-user-pass /etc/openvpn/login.txt &
 sleep 5
 yes "" | echo "VPN Connected"
 NewIP=`wget http://ipinfo.io/ip -qO -`
@@ -26,6 +26,7 @@ then
 		sleep 1
 		gpio write 14 0
 		(( blink++ ))
+		break
 	done
 else
 	/usr/bin/Pushbullet.sh "Old IP: $OldIP New IP: $NewIP"
