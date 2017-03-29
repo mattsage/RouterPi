@@ -3,7 +3,8 @@ echo "****************************************"
 echo $OldIP
 echo "****************************************"
 cd /etc/openvpn/
-sudo service transmission-daemon reload 
+#sudo service transmission-daemon reload 
+deluge-web &
 sudo openvpn --config /etc/openvpn/UK\ Southampton.ovpn --auth-user-pass /etc/openvpn/login.txt &
 sleep 5
 yes "" | echo "VPN Connected"
