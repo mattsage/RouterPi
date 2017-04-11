@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 ###########################################################################
-# Originally written by: Henrik Bengtsson, 2014
-# https://github.com/HenrikBengtsson/speedtest-cli-extras
-# Modified to use IFTTT by: Alasdair Allan, 2015
-# License: GPL (>= 2.1) [http://www.gnu.org/licenses/gpl.html]
+#crontab -e
+#0 * * * * /home/pi/RouterPi/speedtest-ifttt.sh
 ###########################################################################
 
 # Character for separating values
