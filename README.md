@@ -18,6 +18,6 @@
 6. WhatsMyIP.sh - Script used to output external IP address  
 
 ### GPIOs Used  
-..* #17 - Button  
-..* #14 - LED for VPN Connected  
+ #17 - Button  
+ #14 - LED for VPN Connected  
  
