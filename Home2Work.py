@@ -2,8 +2,8 @@ import ssl
 import simplejson, urllib
 import gpiozero
 context = ssl._create_unverified_context()
-origin = open('/home/pi/RouterPi/origin.config', 'r').read()
-destination = open('/home/pi/RouterPi/destination.config', 'r').read()
+origin = open('/home/pi/RouterPi/home.config', 'r').read()
+destination = open('/home/pi/RouterPi/work.config', 'r').read()
 apikey = open('/home/pi/RouterPi/MapsAPI.config', 'r').read()
 traffic = "best_guess"
 #best_guess, pesimistic, optimistic
