@@ -32,11 +32,13 @@ if now.hour < 12:
   origin = open('/home/pi/RouterPi/Traffic/home.config', 'r').read()
   destination = open('/home/pi/RouterPi/Traffic/work.config', 'r').read()
   trafficLoc = "Work"
+  print "Going to %s" % (trafficLoc)
 else:
   print "Evening"
   origin = open('/home/pi/RouterPi/Traffic/work.config', 'r').read()
   destination = open('/home/pi/RouterPi/Traffic/home.config', 'r').read()
   trafficLoc = "Home"
+  print "Going %s" % (trafficLoc)
 
 context = ssl._create_unverified_context()
 apikey = open('/home/pi/RouterPi/Traffic/MapsAPI.config', 'r').read()
