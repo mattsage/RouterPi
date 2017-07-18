@@ -1,4 +1,12 @@
 #!/usr/bin/env python
+
+#########################################################################################################################
+# Author: Matthew Sage                                  				                                #
+# Date: 18/07/2017													#
+# Description: Traffic ETA from Home to Work						 				#
+# Crontab -e: 45 5 * * 1-5 python /home/pi/RouterPi/Traffic/Home2Work.py 						#
+#########################################################################################################################
+
 import ssl
 import simplejson, urllib
 import gpiozero
