@@ -18,5 +18,5 @@ now = datetime.datetime.now()
 
 if now.hour < 12:
   print "Morning"
-else
+else:
   print "Evening"
