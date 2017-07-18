@@ -14,6 +14,6 @@ from gpiozero import LED
 from pushbullet import Pushbullet
 from time import sleep
 
-timenow = datetime.date.today().strftime("%HH:%MM")
+timenow = datetime.date.today().strftime("%H:%M")
 
 print timenow
