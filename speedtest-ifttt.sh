@@ -1,8 +1,13 @@
 #!/usr/bin/env bash
-###########################################################################
-#crontab -e
-#0 * * * * /home/pi/RouterPi/speedtest-ifttt.sh
-###########################################################################
+
+########################################################################################
+# Author: Matthew Sage                                            									   #
+# Date: 17/07/2017		                                															   #
+# Description: Internet speed test and posts to GSheets via IFTTT                      #
+#                                                                                      #
+# crontab -e                                                                           #
+# 0 * * * * /home/pi/RouterPi/speedtest-ifttt.sh                                       #
+########################################################################################
 
 # Character for separating values
 # (commas are not safe, because some servers return speeds with commas)
