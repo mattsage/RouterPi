@@ -9,8 +9,14 @@
 
 import ssl
 import simplejson, urllib
-import gpiozero
+from gpiozero import LED
 from pushbullet import Pushbullet
+from time import sleep
+
+#LED Setup
+#Rled = LED(17)
+#Oled = LED(17)
+#Gled = LED(17)
 
 #Pushbullet setup
 api_key = open('/home/pi/Pushbulletkey.config', 'r').read() #read Pushbullet Key from /home/pi/Pushbulletkey.config file
@@ -39,12 +45,20 @@ if dt2 <= 35:
 	print "good"
 	TravelString = "The Traffic is Good, ETA: %d Minutes" % (dt2)
 	push = pb.push_note(dt3, TravelString)
+	#Gled.on()
+        #sleep(1800)
+        #Gled.off()
 elif dt2 >= 36 or dt2 <= 40:
 	print "moderate"
 	TravelString = "The Traffic is Moderate, ETA: %d Minutes" % (dt2)
 	push = pb.push_note(dt3, TravelString)
+	#Oled.on()
+        #sleep(1800)
+        #Oled.off()
 else:
 	print "heavy"
 	TravelString = "WTF Traffic is a nightmare!!!, ETA: %d Minutes" % (dt2)
-	push = pb.push_note(dt3, TravelString)
-
+	push = pb.push_note(dt3, TravelString
+	#Rled.on()
+        #sleep(1800)
+        #Rled.off()
