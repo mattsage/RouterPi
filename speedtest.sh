@@ -7,4 +7,4 @@
 ########################################################################################
 
 date >> /home/pi/RouterPi/speedtest.log
-/usr/local/bin/speedtest --simple >> /home/pi/speedtest.log
+/usr/local/bin/speedtest --simple >> /home/pi/RouterPi/speedtest.log
