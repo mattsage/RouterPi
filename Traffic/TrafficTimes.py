@@ -59,26 +59,26 @@ if dt2 <= 35:
 	print "good"
 	TravelString = "The Traffic is Good, ETA: %d Minutes" % (dt2)
 	push = pb.push_note(dt3, TravelString)
-  if trafficLoc == "Work":
-        print "GLED ON"
-	      #Gled.on()
-        #sleep(1800)
-        #Gled.off()
+  	if trafficLoc == "Work":
+        	print "GLED ON"
+		#Gled.on()
+        	#sleep(1800)
+		#Gled.off()
 elif dt2 >= 36 or dt2 <= 40:
 	print "moderate"
 	TravelString = "The Traffic is Moderate, ETA: %d Minutes" % (dt2)
 	push = pb.push_note(dt3, TravelString)
-  if trafficLoc == "Work":
-        print "OLED ON"
-	      #Oled.on()
-        #sleep(1800)
-        #Oled.off()
+  	if trafficLoc == "Work":
+		print "OLED ON"
+		#Oled.on()
+        	#sleep(1800)
+        	#Oled.off()
 else:
 	print "heavy"
 	TravelString = "WTF Traffic is a nightmare!!!, ETA: %d Minutes" % (dt2)
 	push = pb.push_note(dt3, TravelString)
-  if trafficLoc == "Work":
-        print "RLED ON"
-	      #Rled.on()
-        #sleep(1800)
-        #Rled.off()
+  	if trafficLoc == "Work":
+        	print "RLED ON"
+		#Rled.on()
+        	#sleep(1800)
+        	#Rled.off()
