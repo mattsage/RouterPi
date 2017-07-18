@@ -1,3 +1,11 @@
+#!/usr/bin/env python
+
+################################################################################################################################################################################
+# Author: Matthew Sage                                  				                               							       #
+# Date: 17/07/2017																			       #																			   #
+# Description: Script is run soon as button StartVPN.py is pressed. Connects to VPN, starts Transmission, sends IPs to Pushbullet, Light LED (GPIO #14), executes Shutdown.py  #
+################################################################################################################################################################################
+
 OldIP=`wget http://ipinfo.io/ip -qO -`
 echo "****************************************"
 echo $OldIP
