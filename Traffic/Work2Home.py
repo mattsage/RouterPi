@@ -11,9 +11,9 @@ api_key = api_key.replace("\n", "") #Remove Whitespace
 pb = Pushbullet(api_key) 
 
 context = ssl._create_unverified_context()
-origin = open('/home/pi/RouterPi/work.config', 'r').read()
-destination = open('/home/pi/RouterPi/home.config', 'r').read()
-apikey = open('/home/pi/RouterPi/MapsAPI.config', 'r').read()
+origin = open('/home/pi/RouterPi/Traffic/work.config', 'r').read()
+destination = open('/home/pi/RouterPi/Traffic/home.config', 'r').read()
+apikey = open('/home/pi/RouterPi/Traffic/MapsAPI.config', 'r').read()
 traffic = "best_guess"
 #best_guess, pesimistic, optimistic
 url = "https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&traffic_model="+traffic+"&departure_time=now&origins="+origin+"&destinations="+destination+"&mode=driving&language=en-EN&sensor=false&key="+apikey
