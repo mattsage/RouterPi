@@ -3,8 +3,8 @@
 #########################################################################################################################
 # Author: Matthew Sage                                  				                                #
 # Date: 18/07/2017													#
-# Description: Traffic ETA from Home to Work With LED Status and Pushbullet Notification				#
-# Crontab -e: 45 5 * * 1-5 python /home/pi/RouterPi/Traffic/Home2Work.py 						#
+# Description: Traffic ETA with LED Status and Pushbullet Notification							#
+# Crontab -e: 45 5 * * 1-5 python /home/pi/RouterPi/Traffic/TrafficTimes.py 						#
 #########################################################################################################################
 
 import datetime
@@ -32,16 +32,16 @@ if now.hour < 12:
   origin = open('/home/pi/RouterPi/Traffic/home.config', 'r').read()
   destination = open('/home/pi/RouterPi/Traffic/work.config', 'r').read()
   trafficLoc = "Work"
-  print origin
-  print destination
+  #print origin
+  #print destination
   print "Going to %s" % (trafficLoc)
 else:
   print "Evening"
   origin = open('/home/pi/RouterPi/Traffic/work.config', 'r').read()
   destination = open('/home/pi/RouterPi/Traffic/home.config', 'r').read()
   trafficLoc = "Home"
-  print origin
-  print destination
+  #print origin
+  #print destination
   print "Going %s" % (trafficLoc)
 
 context = ssl._create_unverified_context()
@@ -60,7 +60,7 @@ print dt2
 dt3 = "ETA to %s is %d Minutes" % (trafficLoc, dt2)
 
 if dt2 <= 35:
-	print "good"
+	print "Good"
 	TravelString = "The Traffic is Good, ETA: %d Minutes" % (dt2)
 	push = pb.push_note(dt3, TravelString)
   	if trafficLoc == "Work":
@@ -69,7 +69,7 @@ if dt2 <= 35:
         	#sleep(1800)
 		#Gled.off()
 elif dt2 >= 36 or dt2 <= 40:
-	print "moderate"
+	print "Moderate"
 	TravelString = "The Traffic is Moderate, ETA: %d Minutes" % (dt2)
 	push = pb.push_note(dt3, TravelString)
   	if trafficLoc == "Work":
@@ -78,7 +78,7 @@ elif dt2 >= 36 or dt2 <= 40:
         	#sleep(1800)
         	#Oled.off()
 else:
-	print "heavy"
+	print "Heavy"
 	TravelString = "WTF Traffic is a nightmare!!!, ETA: %d Minutes" % (dt2)
 	push = pb.push_note(dt3, TravelString)
   	if trafficLoc == "Work":
