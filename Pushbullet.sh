@@ -1,4 +1,9 @@
 #!/bin/bash
+########################################################################################
+# Author: Matthew Sage                                            									   #
+# Date: 17/07/2017													                                				   #
+# Description:  Pushbullet notification of new IP address when VPN is turned on        #
+########################################################################################
 
 #Copy this file to /usr/bin
 #Create file /home/pi/pushbullet.config with pushbullet apiKey
