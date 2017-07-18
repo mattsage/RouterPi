@@ -21,7 +21,7 @@
 7. speedtest.sh - Does internet Speed Test
 8. speedtest-ifttt.sh - Internet speed test and posts to GSheets via IFTTT
 
-####    /Traffic
+####        /Traffic
 9. Home2Work.py - Traffic ETA from Home to Work (Runs at 0645 Mon-Fri)
 10. Work2Home.py - Traffic ETA from Work to Home (Runs at 1625 Mon-Fri)
 
