@@ -1,6 +1,15 @@
+#!/usr/bin/env python
 import ssl
 import simplejson, urllib
 import gpiozero
+from pushbullet import Pushbullet
+
+#Pushbullet setup
+api_key = open('/home/pi/Pushbulletkey.config', 'r').read() #read Pushbullet Key from /home/pi/Pushbulletkey.config file
+api_key = api_key.replace("\n", "") #Remove Whitespace
+#print api_key
+pb = Pushbullet(api_key) 
+
 context = ssl._create_unverified_context()
 origin = open('/home/pi/RouterPi/work.config', 'r').read()
 destination = open('/home/pi/RouterPi/home.config', 'r').read()
@@ -19,7 +28,13 @@ print dt2
 
 if dt2 <= 35:
 	print "good"
+	TravelString = "The Traffic is Good, ETA: %d Minutes" % (dt2)
+	push = pb.push_note(ETA dt2, TravelString)
 elif dt2 >= 36 or dt2 <= 40:
 	print "moderate"
+	TravelString = "The Traffic is Moderate, ETA: %d Minutes" % (dt2)
+	push = pb.push_note(ETA dt2, TravelString)
 else:
 	print "heavy"
+	TravelString = "WTF Traffic is a nightmare, ETA: %d Minutes" % (dt2)
+	push = pb.push_note(ETA dt2, TravelString)
