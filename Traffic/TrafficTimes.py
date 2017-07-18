@@ -16,4 +16,7 @@ from time import sleep
 
 now = datetime.datetime.now()
 
-print now.hour
+if now.hour < 12:
+  print "Morning"
+else
+  print "Evening"
