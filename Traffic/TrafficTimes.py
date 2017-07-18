@@ -53,7 +53,7 @@ driving_time = result['rows'][0]['elements'][0]['duration_in_traffic']['text']
 #    myfile.write("Time: %s" % driving_time)
 dt2 = int(filter(str.isdigit, driving_time))
 print dt2
-dt3 = "ETA to %s is %d Minutes" % (trafficloc, dt2)
+dt3 = "ETA to %s is %d Minutes" % (trafficLoc, dt2)
 
 if dt2 <= 35:
 	print "good"
