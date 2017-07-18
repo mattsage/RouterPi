@@ -37,5 +37,5 @@ elif dt2 >= 36 or dt2 <= 40:
 	push = pb.push_note(dt3, TravelString)
 else:
 	print "heavy"
-	TravelString = "WTF Traffic is a nightmare, ETA: %d Minutes" % (dt2)
+	TravelString = "WTF Traffic is a nightmare!!!, ETA: %d Minutes" % (dt2)
 	push = pb.push_note(dt3, TravelString)
