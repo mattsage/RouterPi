@@ -25,16 +25,17 @@ driving_time = result['rows'][0]['elements'][0]['duration_in_traffic']['text']
 #    myfile.write("Time: %s" % driving_time)
 dt2 = int(filter(str.isdigit, driving_time))
 print dt2
+dt3 = "ETA %d Minutes" % (dt2)
 
 if dt2 <= 35:
 	print "good"
 	TravelString = "The Traffic is Good, ETA: %d Minutes" % (dt2)
-	push = pb.push_note("ETA" dt2, TravelString)
+	push = pb.push_note(dt3, TravelString)
 elif dt2 >= 36 or dt2 <= 40:
 	print "moderate"
 	TravelString = "The Traffic is Moderate, ETA: %d Minutes" % (dt2)
-	push = pb.push_note("ETA" dt2, TravelString)
+	push = pb.push_note(dt3, TravelString)
 else:
 	print "heavy"
 	TravelString = "WTF Traffic is a nightmare, ETA: %d Minutes" % (dt2)
-	push = pb.push_note("ETA" dt2, TravelString)
+	push = pb.push_note(dt3, TravelString)
