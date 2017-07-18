@@ -6,5 +6,5 @@
 # Description: Does internet Speed Test                                                #
 ########################################################################################
 
-date >> /home/pi/speedtest.log
+date >> /home/pi/RouterPi/speedtest.log
 /usr/local/bin/speedtest --simple >> /home/pi/speedtest.log
