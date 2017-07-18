@@ -1,3 +1,11 @@
+#!/usr/bin/env python
+
+#########################################################################################################################
+# Author: Matthew Sage                                  				                                #
+# Date: 17/07/2017													#
+# Description:Script is run at boot. Waits for button on GPIO #17 to be pressed. Once Pressed TorrentVPN.sh is executed #				#
+#########################################################################################################################
+
 import RPi.GPIO as GPIO
 import time
 import os
