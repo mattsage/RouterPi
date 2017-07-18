@@ -20,7 +20,10 @@
 6. WhatsMyIP.sh - Script used to output external IP address
 7. speedtest.sh - Does internet Speed Test
 8. speedtest-ifttt.sh - Internet speed test and posts to GSheets via IFTTT
-9. Gmaps.py - Gets travel time to work and updates LED on pin # (Added to cron job)
+
+#### /Traffic
+9. Home2Work.py - Traffic ETA from Home to Work (Runs at 0645 Mon-Fri)
+10. Work2Home.py - Traffic ETA from Work to Home (Runs at 1625 Mon-Fri)
 
 ### GPIOs Used  
  #17 - Button  
