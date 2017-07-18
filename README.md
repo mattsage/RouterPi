@@ -22,8 +22,7 @@
 8. speedtest-ifttt.sh - Internet speed test and posts to GSheets via IFTTT
 
 ####        /Traffic
-9. Home2Work.py - Traffic ETA from Home to Work (Runs at 0645 Mon-Fri)
-10. Work2Home.py - Traffic ETA from Work to Home (Runs at 1625 Mon-Fri)
+9. TrafficTimes.py - Traffic ETA (Runs Mon-Fri at 0645 (Home -> Work) and 1625 (Work -> Home))
 
 ### GPIOs Used  
  #17 - Button  
