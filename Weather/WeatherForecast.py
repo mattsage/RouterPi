@@ -6,12 +6,16 @@
 # Description: Weather Report on Condition and High/Low Temps                                                  	  			#
 #########################################################################################################################
 import subprocess
+import datetime
 from pushbullet import Pushbullet
 
 #Pushbullet setup
 api_key = open('/home/pi/APIConfigs/Pushbulletkey.config', 'r').read() #read Pushbullet Key from /home/pi/Pushbulletkey.config file
 api_key = api_key.replace("\n", "") #Remove Whitespace
 pb = Pushbullet(api_key) 
+
+#Date
+datetoday = datetime.datetime.now().strftime('%A %d %B') #Todays Date e.g. Monday 13 June
 
 #Get Weather Condition
 condition = subprocess.check_output("pywu forecast condition", shell=True)
@@ -30,6 +34,6 @@ rain = rain.replace("\n", "")
 rain = rain + "mm"
 
 pbsubject = "Forecast: %s %s" % (condition,high)
-forecast = "The forecast today is %s, with highs of %s and lows of %s. You will have %s of rain" % (condition,high,low,rain)
+forecast = "The forecast for %s is %s, with highs of %s and lows of %s. You will have %s of rain" % (datetoday,condition,high,low,rain)
 
 push = pb.push_note(pbsubject,forecast)
