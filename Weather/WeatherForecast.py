@@ -25,6 +25,6 @@ high = subprocess.check_output("pywu forecast high_c", shell=True)
 high = high.replace("\n", "")
 high = high + "C"
 
+subject = "Forecast: %s" % (condition)
 forecast = "Forecast today is %s, with highs of %s and lows of %s" % (condition,high,low)
-print forecast
-push = pb.push_note(condition, forecast)
+push = pb.push_note(subject, forecast)
