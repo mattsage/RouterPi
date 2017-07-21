@@ -24,6 +24,10 @@
 ####        /Traffic
 9. TrafficTimes.py - Traffic ETA (Runs Mon-Fri at 0645 (Home -> Work) and 1625 (Work -> Home))
 
+####        /Weather
+10. Get-Weather.sh - Gets local forcast for the day at 6am from WeatherUnderground.com
+11. WeatherForecast.py - Pushes Weather Condition and Temp Highs/Lows
+
 ### GPIOs Used  
  #17 - Button  
  #14 - LED for VPN Connected  
