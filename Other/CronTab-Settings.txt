@@ -1,0 +1,11 @@
+0 * * * * /home/pi/RouterPi/SpeedTests/speedtest-ifttt.sh
+
+0 5,18 * * * python /home/pi/CleaningCalendar/CleaningCalendar.py
+
+45 5 * * 1-5 python /home/pi/RouterPi/Traffic/TrafficTimes.py
+
+25 15 * * 1-5 python /home/pi/RouterPi/Traffic/TrafficTimes.py
+
+30 5 * * * /home/pi/RouterPi/Weather/Get-Weather.sh
+
+0 6 * * * /home/pi/RouterPi/Weather/WeatherForecast.py
