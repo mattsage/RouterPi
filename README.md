@@ -17,9 +17,13 @@
 3. Shutdown.py	- Python Script which runs after TorrentVPN.sh. Configured button on GPIO #17 to shutdown the Pi. Can be set up via: https://github.com/mattsage/Shutdown-Button  
 4. FileChecker.sh - Checks file location for finished downloads, once complete LED on GPIO ??? is lit  
 5. Pushbullet.sh - Pushbullet notification of new IP address when VPN is turned on.   
-6. WhatsMyIP.sh - Script used to output external IP address
+
+####        /SpeedTests
+6. speedtest-ifttt.sh - Internet speed test and posts to GSheets via IFTTT
 7. speedtest.sh - Does internet Speed Test
-8. speedtest-ifttt.sh - Internet speed test and posts to GSheets via IFTTT
+
+####        /Other
+8. WhatsMyIP.sh - Script used to output external IP address
 
 ####        /Traffic
 9. TrafficTimes.py - Traffic ETA (Runs Mon-Fri at 0645 (Home -> Work) and 1625 (Work -> Home))
