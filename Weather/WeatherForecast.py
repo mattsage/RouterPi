@@ -24,6 +24,12 @@ low = low + "C"
 high = subprocess.check_output("pywu forecast high_c", shell=True)
 high = high.replace("\n", "")
 high = high + "C"
+#Get Rain mm
+rain = subprocess.check_output("pywu forecast rain_mm", shell=True)
+rain = rain.replace("\n", "")
+rain = rain + "mm"
 
-forecast = "Forecast today is %s, with highs of %s and lows of %s" % (condition,high,low)
-push = pb.push_note(forecast)
+pbsubject = "Forecast: %s %s" % (condition,high)
+forecast = "The forecast today is %s, with highs of %s and lows of %s. You will have %s of rain" % (condition,high,low,rain)
+
+push = pb.push_note(pbsubject,forecast)
