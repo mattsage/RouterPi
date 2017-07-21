@@ -33,7 +33,7 @@ rain = subprocess.check_output("pywu forecast rain_mm", shell=True)
 rain = rain.replace("\n", "")
 rain = rain + "mm"
 
-pbsubject = "Forecast: %s %s" % (condition,high)
+pbsubject = "%s Today! High of %s" % (condition,high)
 forecast = "The forecast for %s is %s, with highs of %s and lows of %s. You will have %s of rain" % (datetoday,condition,high,low,rain)
 
 push = pb.push_note(pbsubject,forecast)
