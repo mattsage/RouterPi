@@ -1,3 +1,9 @@
+#########################################################################################################################
+# Author: Matthew Sage                                                          				                                #
+# Date: 21/07/2017				                                                                            									#
+# Description: Weather Report on Condition and High/Low Temps                                                  	  			#
+#########################################################################################################################
+
 import subprocess
 
 condition = subprocess.check_output("pywu forecast condition", shell=True)
