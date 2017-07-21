@@ -20,7 +20,7 @@ from time import sleep
 #Gled = LED(17)
 
 #Pushbullet setup
-api_key = open('/home/pi/Pushbulletkey.config', 'r').read() #read Pushbullet Key from /home/pi/Pushbulletkey.config file
+api_key = open('/home/pi/APIConfigs/Pushbulletkey.config', 'r').read() #read Pushbullet Key from /home/pi/Pushbulletkey.config file
 api_key = api_key.replace("\n", "") #Remove Whitespace
 #print api_key
 pb = Pushbullet(api_key) 
@@ -37,15 +37,15 @@ if now.hour < 12:
   print "Going to %s" % (trafficLoc)
 else:
   print "Evening"
-  origin = open('/home/pi/RouterPi/Traffic/work.config', 'r').read()
-  destination = open('/home/pi/RouterPi/Traffic/home.config', 'r').read()
+  origin = open('/home/pi/APIConfigs/work.config', 'r').read()
+  destination = open('/home/pi/APIConfigs/home.config', 'r').read()
   trafficLoc = "Home"
   #print origin
   #print destination
   print "Going %s" % (trafficLoc)
 
 context = ssl._create_unverified_context()
-apikey = open('/home/pi/RouterPi/Traffic/MapsAPI.config', 'r').read()
+apikey = open('/home/pi/APIConfigs/MapsAPI.config', 'r').read()
 traffic = "best_guess"
 #best_guess, pesimistic, optimistic
 url = "https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&traffic_model="+traffic+"&departure_time=now&origins="+origin+"&destinations="+destination+"&mode=driving&language=en-EN&sensor=false&key="+apikey
