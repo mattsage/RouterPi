@@ -22,15 +22,16 @@
 6. speedtest-ifttt.sh - Internet speed test and posts to GSheets via IFTTT
 7. speedtest.sh - Does internet Speed Test
 
-####        /Other
-8. WhatsMyIP.sh - Script used to output external IP address
-
 ####        /Traffic
-9. TrafficTimes.py - Traffic ETA (Runs Mon-Fri at 0645 (Home -> Work) and 1625 (Work -> Home))
+8. TrafficTimes.py - Traffic ETA (Runs Mon-Fri at 0645 (Home -> Work) and 1625 (Work -> Home))
 
 ####        /Weather
-10. Get-Weather.sh - Gets local forcast for the day at 6am from WeatherUnderground.com
-11. WeatherForecast.py - Pushes Weather Condition and Temp Highs/Lows
+9. Get-Weather.sh - Gets local forcast for the day at 6am from WeatherUnderground.com
+10. WeatherForecast.py - Pushes Weather Condition and Temp Highs/Lows
+
+####        /Other
+11. WhatsMyIP.sh - Script used to output external IP address
+12. CronTab-Settings.txt - CronTab Schedules
 
 ### GPIOs Used  
  #17 - Button  
