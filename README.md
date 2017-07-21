@@ -40,3 +40,27 @@
  #17 - Button  
  #14 - LED for VPN Connected  
  
+### API Keys needed
+#Github Key  
+/home/pi/APIConfigs/github.config  
+
+#Home Coords for Traffic  
+/home/pi/APIConfigs/Home.config  
+
+#IFTTT Key for GSheets  
+/home/pi/APIConfigs/IFTTT-Makerkey.config  
+
+#Pushbullet Key  
+/home/pi/APIConfigs/Pushbulletkey.config  
+
+#Gooogle Maps API Key for Traffic  
+/home/pi/APIConfigs/MapsAPI.config  
+
+#Work Coords for Traffic  
+/home/pi/APIConfigs/Work.config  
+
+#Weather Underground API Key  
+/home/pi/APIConfigs/WUapikey.config  
+
+#Home Location for Weather  
+/home/pi/APIConfigs/Wulocation.config  
