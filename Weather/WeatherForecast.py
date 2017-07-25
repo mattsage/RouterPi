@@ -14,6 +14,8 @@ api_key = open('/home/pi/APIConfigs/Pushbulletkey.config', 'r').read() #read Pus
 api_key = api_key.replace("\n", "") #Remove Whitespace
 pb = Pushbullet(api_key) 
 
+subprocess.call("/home/pi/RouterPi/Weather/Get-Weather.sh", shell=True)
+
 #Date
 datetoday = datetime.datetime.now().strftime('%A %d %B') #Todays Date e.g. Monday 13 June
 
