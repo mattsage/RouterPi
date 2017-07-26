@@ -29,8 +29,8 @@ pb = Pushbullet(api_key)
 now = datetime.datetime.now()
 if now.hour < 12:
   print "Morning"
-  origin = open('/home/pi/RouterPi/Traffic/home.config', 'r').read()
-  destination = open('/home/pi/RouterPi/Traffic/work.config', 'r').read()
+  origin = open('/home/pi/APIConfigs/home.config', 'r').read()
+  destination = open('/home/pi/APIConfigs/work.config', 'r').read()
   trafficLoc = "Work"
   #print origin
   #print destination
