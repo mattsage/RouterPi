@@ -15,9 +15,9 @@ from pushbullet import Pushbullet
 from time import sleep
 
 #LED Setup
-#Rled = LED(17)
-#Oled = LED(17)
-#Gled = LED(17)
+Rled = LED(27)
+Oled = LED(23)
+Gled = LED(25)
 
 #Pushbullet setup
 api_key = open('/home/pi/APIConfigs/Pushbulletkey.config', 'r').read() #read Pushbullet Key from /home/pi/Pushbulletkey.config file
@@ -65,24 +65,24 @@ if dt2 <= 35:
 	push = pb.push_note(dt3, TravelString)
   	if trafficLoc == "Work":
         	print "GLED ON"
-		#Gled.on()
-        	#sleep(1800)
-		#Gled.off()
+		Gled.on()
+        	sleep(1800)
+		Gled.off()
 elif dt2 >= 36 or dt2 <= 40:
 	print "Moderate"
 	TravelString = "The Traffic is Moderate, ETA: %d Minutes" % (dt2)
 	push = pb.push_note(dt3, TravelString)
   	if trafficLoc == "Work":
 		print "OLED ON"
-		#Oled.on()
-        	#sleep(1800)
-        	#Oled.off()
+		Oled.on()
+        	sleep(1800)
+        	Oled.off()
 else:
 	print "Heavy"
 	TravelString = "WTF Traffic is a nightmare!!!, ETA: %d Minutes" % (dt2)
 	push = pb.push_note(dt3, TravelString)
   	if trafficLoc == "Work":
         	print "RLED ON"
-		#Rled.on()
-        	#sleep(1800)
-        	#Rled.off()
+		Rled.on()
+        	sleep(1800)
+        	Rled.off()
