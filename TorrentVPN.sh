@@ -31,15 +31,15 @@ then
 	while [ $blink -le 20 ]
 	do
 		#gpio mode 14 out
-		gpio write 14 1
+		gpio write 22 1
 		sleep 1
-		gpio write 14 0
+		gpio write 22 0
 		(( blink++ ))
 		break
 	done
 else
 	/usr/bin/Pushbullet.sh "Old IP: $OldIP New IP: $NewIP"
 	#gpio mode 14 out
-	gpio write 14 1
+	gpio write 22 1
 	sudo python /home/pi/RouterPi/Shutdown.py
 fi
