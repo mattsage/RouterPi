@@ -38,7 +38,11 @@
 
 ### GPIOs Used  
  #17 - Button  
- #14 - LED for VPN Connected  
+ #25 - Green LED  
+ #23 - Orange LED  
+ #27 - Red LED  
+ #22 - Bottom Orange
+ #24 - Bottom Green
  
 ### API Keys needed
 #Github Key  
