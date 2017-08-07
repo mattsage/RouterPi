@@ -12,6 +12,7 @@ echo $OldIP
 echo "****************************************"
 cd /etc/openvpn/
 #sudo service transmission-daemon reload 
+sudo service deluged start
 deluge-web &
 sudo openvpn --config /etc/openvpn/UK\ Southampton.ovpn --auth-user-pass /etc/openvpn/login.txt &
 sleep 5
