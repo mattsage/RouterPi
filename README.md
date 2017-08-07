@@ -41,8 +41,8 @@
  #25 - Green LED  
  #23 - Orange LED  
  #27 - Red LED  
- #22 - Bottom Orange
- #24 - Bottom Green
+ #22 - Bottom Orange  
+ #24 - Bottom Green  
  
 ### API Keys needed
 #Github Key  
