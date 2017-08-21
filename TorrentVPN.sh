@@ -44,3 +44,5 @@ else
 	gpio write 22 1
 	sudo python /home/pi/RouterPi/Shutdown.py
 fi
+/home/pi/Scripts/github/RouterPi/Other/FileChecker.sh &
+chromium-browser 127.1.1.1:8112
