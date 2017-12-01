@@ -7,3 +7,5 @@
 25 15 * * 1-5 python /home/pi/RouterPi/Traffic/TrafficTimes.py
 
 0 6 * * *  sudo python /home/pi/RouterPi/Weather/WeatherForecast.py
+
+30 6 * 12 * sudo python /home/pi/RouterPi/Other/Xmas-Countdown.py
