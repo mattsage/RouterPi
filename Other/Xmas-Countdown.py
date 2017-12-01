@@ -20,8 +20,8 @@ mn = 60 - dt.minute
 sec = 60 - dt.second
 
 if month == "December" and daynumber < 25:
-	s = repr(day) + 'days ' + repr(hr) + 'hours ' + repr(mn) + 'mins ' + repr(sec) + 'secs' + ' until Christmas'
-	b = "Holidays are coming!"
+	s = repr(day) + ' days ' + repr(hr) + ' hours ' + repr(mn) + ' mins ' + repr(sec) + ' secs' + ' until Christmas'
+	b = "Holidays are coming! Holidays are coming!"
 	#print s
 	push = pb.push_note(s, b)
 elif month == "December" and daynumber == 25:
