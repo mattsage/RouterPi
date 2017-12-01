@@ -32,7 +32,7 @@ elif month == "December" and daynumber == 25:
 	b = "Go and un-wrap some presents!!!"
 	push = pb.push_note(s, b)
 elif month == "December" and daynumber > 25:
-	s = repr(Xday) + ' days ' + repr(hr) + ' hours ' + repr(mn) + ' mins ' + repr(sec) + ' secs' + ' until New Year!'
+	s = repr(NYday) + ' days ' + repr(hr) + ' hours ' + repr(mn) + ' mins ' + repr(sec) + ' secs' + ' until New Year!'
 	b = ""
 	push = pb.push_note(s, s)
 else:
