@@ -26,6 +26,7 @@ if month == "December" and daynumber < 25:
 	push = pb.push_note(s, b)
 elif month == "December" and daynumber == 25:
 	s = "ITS CHRISTMAS!!!!!!!!!!"
+	b = "Go and un-wrap some presents!!!"
 	push = pb.push_note(s, s)
 else:
 	print ""
