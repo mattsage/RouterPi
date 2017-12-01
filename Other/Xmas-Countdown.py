@@ -17,7 +17,7 @@ month = datetime.date.today().strftime("%B") #Month e.g. June
 daynumber = datetime.datetime.now().day 
 
 mon = 12 - dt.month
-day = 25 - dt.day
+day = 24 - dt.day
 hr = 23 - dt.hour
 mn = 60 - dt.minute
 sec = 60 - dt.second
