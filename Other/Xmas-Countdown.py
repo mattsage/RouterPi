@@ -1,7 +1,12 @@
 import sys
 import datetime
+import time
 from pushbullet import Pushbullet
 import random
+
+time2wait = random.randint(1,64801)
+
+sleep(time2wait)
 
 api_key = open('/home/pi/APIConfigs/Pushbulletkey.config', 'r').read() #read Pushbullet Key from /home/pi/Pushbulletkey.config file
 api_key = api_key.replace("\n", "") #Remove Whitespace
