@@ -4,7 +4,7 @@ import time
 from pushbullet import Pushbullet
 import random
 
-time2wait = random.randint(1,64801)
+time2wait = random.randint(1,64801) #random time in next 16 hours
 
 print time2wait
 
