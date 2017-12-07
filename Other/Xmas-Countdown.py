@@ -4,12 +4,6 @@ import time
 from pushbullet import Pushbullet
 import random
 
-time2wait = random.randint(1,37600) #random time in next 10 hours
-
-print time2wait
-
-time.sleep(time2wait)
-
 api_key = open('/home/pi/APIConfigs/Pushbulletkey.config', 'r').read() #read Pushbullet Key from /home/pi/Pushbulletkey.config file
 api_key = api_key.replace("\n", "") #Remove Whitespace
 #print api_key
@@ -31,6 +25,9 @@ mn = 60 - dt.minute
 sec = 60 - dt.second
 
 if month == "December" and daynumber < 25:
+	time2wait = random.randint(1,37600) #random time in next 10 hours
+	print time2wait
+	time.sleep(time2wait)
 	s = repr(Xday) + ' days ' + repr(hr) + ' hours ' + repr(mn) + ' mins ' + repr(sec) + ' secs' + ' until Christmas'
 	#print s
 	push = pb.push_note(s, randjoke)
