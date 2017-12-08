@@ -21,4 +21,4 @@ interjections = ['AH','AINT THAT SOMETHING','ALL RIGHT','awesome','bada bing','B
 ranint = random.choice(interjections) #Choose random interjections
 
 diff = DDay - today
-print "%s !!!! There are %s days until Baby Sage!" % (ranint, diff.days)
+print "%s!! There are only %s days until Baby Sage!" % (ranint, diff.days)
