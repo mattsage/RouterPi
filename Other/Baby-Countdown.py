@@ -21,4 +21,12 @@ interjections = ['AH','AINT THAT SOMETHING','ALL RIGHT','awesome','bada bing','B
 ranint = random.choice(interjections) #Choose random interjections
 
 diff = DDay - today
-print "%s!! There are only %s days until Baby Sage!" % (ranint, diff.days)
+diffdays = diff.days
+
+if diffdays > 0:
+	print "%s!! There are only %s days until Baby Sage!" % (ranint, diff.days)
+  #s = "%s!! There are only %s days until Baby Sage!" % (ranint, diff.days)
+	#push = pb.push_note(s, ranint)
+else:
+	print "%s! Baby Sage over due!" % (ranint)
+  
