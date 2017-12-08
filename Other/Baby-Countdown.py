@@ -12,7 +12,7 @@ pb = Pushbullet(api_key)
 
 #Dates
 today = date.today()
-DDay = date(2017,12,07)
+DDay = date(2018,06,17)
 
 #Interjections
 
@@ -24,9 +24,9 @@ diff = DDay - today
 diffdays = diff.days
 
 if diffdays > 0:
-	print "%s!! There are only %s days until Baby Sage!" % (ranint, diff.days)
-  #s = "%s!! There are only %s days until Baby Sage!" % (ranint, diff.days)
-	#push = pb.push_note(s, ranint)
+	#print "%s!! There are only %s days until Baby Sage!" % (ranint, diff.days)
+  	s = "%s!! There are only %s days until Baby Sage!" % (ranint, diff.days)
+	push = pb.push_note(s, ranint)
 else:
-	print "%s! Baby Sage over due!" % (ranint)
+	print "WARNING! Baby Sage over due! TICK TOCK!"
   
