@@ -12,7 +12,7 @@ pb = Pushbullet(api_key)
 
 #Dates
 today = date.today()
-DDay = date(2018,06,17)
+DDay = date(2017,12,07)
 
 #Interjections
 
