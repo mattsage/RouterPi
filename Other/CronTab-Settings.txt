@@ -9,3 +9,5 @@
 0 6 * * *  sudo python /home/pi/RouterPi/Weather/WeatherForecast.py
 
 30 6 * 12 * sudo python /home/pi/RouterPi/Other/Xmas-Countdown.py
+
+0 9 * * * sudo python /home/pi/RouterPi/Other/Baby-Countdown.py
