@@ -16,7 +16,7 @@ while True:
 
     up = st.upload()
     if up > 60000000:  # 6Mb
-        print ("good"))
+        print ("good")
     if up > 4000000:  # 4Mb
         print ("meh")
     if up > 2000000:  # 2Mb
