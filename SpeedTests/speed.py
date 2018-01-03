@@ -7,6 +7,7 @@ while True:
     st.get_best_server()
 
     down = st.download()
+    print down
     if down > 60000000:  # 60Mb
         print ("good")
     if down > 40000000:  # 40Mb
@@ -15,6 +16,7 @@ while True:
         print ("bad")
 
     up = st.upload()
+    print up    
     if up > 60000000:  # 6Mb
         print ("good")
     if up > 4000000:  # 4Mb
