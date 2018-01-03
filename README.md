@@ -13,6 +13,8 @@
 8. Google MapsApi
 9. pywu - https://github.com/dh4/pywu - sudo pip3 install pywu
 10. crontab -e (https://github.com/mattsage/RouterPi/blob/master/Other/CronTab-Settings.txt)
+11. sudo pip3 install speedtest-cli
+
 
 ### Scripts Description  
 1. ButtonStartVPN.py	- Script is run at boot. Waits for button on GPIO #17 to be pressed. Once Pressed TorrentVPN.sh is executed  
