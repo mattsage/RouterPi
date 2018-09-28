@@ -11,3 +11,5 @@
 30 6 * 12 * sudo python /home/pi/RouterPi/Other/Xmas-Countdown.py
 
 0 9 * * * sudo python /home/pi/RouterPi/Other/Baby-Countdown.py
+
+30 6 * 12 * sudo python /home/pi/RouterPi/Other/Halloween-Countdown.py
